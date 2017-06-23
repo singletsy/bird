@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#c{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="800" height="600" id="c"></canvas>
+
+	<script src="sky.js"></script>
+	<script src="bird.js"></script>
+	<script src="land.js"></script>
+	<script src="pipe.js"></script>
+	<script src="game.js"></script>
+	<script>
+		var cas = document.querySelector("#c");
+		var ctx = cas.getContext("2d");
+
+		var game = new Game(ctx);
+	</script>
+</body>
+</html>
